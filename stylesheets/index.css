@@ -19,4 +19,33 @@ document.
     color: rgb(0, 0, 0);
 
 }
+/* descendant selector. Read from right to left */
+.navbar li{
+    color: green;
+    list-style: none;
 
+}
+
+.navbar ul{
+    padding-left: 0;
+
+}
+/* li {
+    font-size:24px;
+    font-family: 'Oswald', sans-serif;
+} */
+.main-image {
+    width:260px;
+    height: 400px;
+}
+.main-image img {
+    width: 100%;
+}
+
+.plant-image {
+    background-image: url(../images/plants.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
