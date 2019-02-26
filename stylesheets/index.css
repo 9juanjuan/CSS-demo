@@ -5,7 +5,14 @@ These are the styles for the whole
 document. 
 */
 
-.main-title 
-{
-    background: rgb(58, 205, 210);
+.main-title {
+    background: rgb(32, 171, 176);
+    
 } 
+
+.fancy-font, 
+.navbar {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
