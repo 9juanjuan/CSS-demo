@@ -1,18 +1,22 @@
 
 
-/* 
+/*
 These are the styles for the whole 
 document. 
 */
 
 .main-title {
     background: rgb(32, 171, 176);
-    
+    padding: 10px 35px;
+    /* Top Right bottom left
+    padding: 10px 5px 10px 5px */
+
 } 
 
 .fancy-font, 
 .navbar {
     font-family: 'Oswald', sans-serif;
     color: rgb(0, 0, 0);
+
 }
 
