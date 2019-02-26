@@ -6,17 +6,19 @@ document.
 */
 
 .main-title {
-    background: rgb(32, 171, 176);
+    background: rgba(32, 171, 176, 0.25);
     padding: 10px 35px;
     /* Top Right bottom left
     padding: 10px 5px 10px 5px */
+    margin: 0;
+
 
 } 
 
 .fancy-font, 
 .navbar {
     font-family: 'Oswald', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(249, 249, 249);
 
 }
 /* descendant selector. Read from right to left */
@@ -48,4 +50,5 @@ document.
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 20px;
 }
