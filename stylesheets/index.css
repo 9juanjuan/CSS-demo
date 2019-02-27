@@ -10,13 +10,36 @@ html, body {
     width: 100%;
 
 }
-
+h1 {
+    display: flex;
+    justify-content:center;
+}
 .picture-frame{
-    width:150px;
-    /* This works but we're trying to break it 
-    display:inline-block;*/
+    width: 80%;
+    border: 2px solid cornflowerblue;
+    /* wow much center */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .5rem;
 }
 
 .picture-frame img{
     width: 100%;
+}
+
+
+.playground {  
+    border: 5px solid gold;
+    display: flex;
+    flex-direction: column;
+    /* main axis line up */
+    justify-content:space-around;
+    /* cross axis line up */
+    align-items: center;
+    /* if you set the height that's how big the 
+    element will be. then the hamster will overflow.
+    instead we set min height0 */
+    min-height: 300px;
+
 }
