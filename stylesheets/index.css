@@ -1,54 +1,12 @@
-
-
-/*
-These are the styles for the whole 
-document. 
-*/
-
-.main-title {
-    background: rgba(32, 171, 176, 0.25);
-    padding: 10px 35px;
-    /* Top Right bottom left
-    padding: 10px 5px 10px 5px */
-    margin: 0;
-
-
-} 
-
-.fancy-font, 
-.navbar {
-    font-family: 'Oswald', sans-serif;
-    color: rgb(249, 249, 249);
-
+html {
+    box-sizing: border-box;
 }
-/* descendant selector. Read from right to left */
-.navbar li{
-    color: green;
-    list-style: none;
+*, *:before, *:after{
+     box-sizing: inherit;
+}   
 
-}
-
-.navbar ul{
-    padding-left: 0;
-
-}
-/* li {
-    font-size:24px;
-    font-family: 'Oswald', sans-serif;
-} */
-.main-image {
-    width:260px;
-    height: 400px;
-}
-.main-image img {
+html, body {
+    height: 100%;
     width: 100%;
-}
 
-.plant-image {
-    background-image: url(../images/plants.jpg);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 20px;
 }
