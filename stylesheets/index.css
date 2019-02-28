@@ -13,8 +13,17 @@ html, body {
 .logo-text {
     font-size: 40px;
     display: flex;
-    justify-content:center;
+    margin-left: 8%;
+    /* justify-content:center; */
+    flex-wrap: nowrap;
     font-family: 'Grand Hotel', cursive;
+
+}
+.top-img {
+    display:flex;
+    justify-content: flex-end;
+    height: 45px;
+    margin-right: 20px;
 }
 .picture-frame{
     width: 80%;
