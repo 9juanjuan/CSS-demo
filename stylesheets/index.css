@@ -10,9 +10,11 @@ html, body {
     width: 100%;
 
 }
-h1 {
+.logo-text {
+    font-size: 40px;
     display: flex;
     justify-content:center;
+    font-family: 'Grand Hotel', cursive;
 }
 .picture-frame{
     width: 80%;
@@ -21,6 +23,7 @@ h1 {
     display:flex;
     justify-content: center;
     align-content: center;
+    margin: 20px 0;
 }
 
 .picture-frame img{
@@ -46,12 +49,57 @@ h1 {
 /* kind of like an if statement for CSS */
 @media screen and (min-width:500px) {
     body {
-        background:red;
+        background: rgb(255, 162, 0);
+    }
+        .picture-frame {
+            width:47.5%;
+            margin: 10px 5px 10px 5px;
+
+        }
+
+    .playground {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 5%;
+        padding-left:  5%;
     }
 }
 
+@media screen and (min-width: 700px) {
+    body {
+        background: purple;
+    }
+    .picture-frame {
+        width:30%;
+        margin: 15px 10px 15px 10px;
+
+    }
+
+    .playground {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:center;
+    }
+}
 @media screen and (min-width: 1000px) {
     body {
-        background: purple; 
+        background: salmon;
+    }
+    .picture-frame {
+        width:22%;
+        /* margin: 20px 10px 20px 10px; */
+
+    }
+
+    .playground {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
     }
 }
