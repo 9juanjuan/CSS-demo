@@ -26,9 +26,19 @@ html, body {
     margin: 20px 0;
 }
 
+/* Using the :hover pseudo-class */
+.picture-frame:hover {
+    outline: solid black;
+}
+.picture-frame:hover img {
+    transform: scale(1.1);
+    opacity:1.0;
+
+}
 .picture-frame img{
     width: 100%;
     height: 100%;
+    opacity: 0.95;
 }
 
 
