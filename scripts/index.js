@@ -11,7 +11,12 @@ function respondToClick() {
 
     console.log('I am fine because I am a hamster.');
 }
-targetElements[0].addEventListener("click", respondToClick);
+function attachClickHandler(oneElement) {
+    oneElement.addEventListener("click", respondToClick);
+}
+
+
+targetElements.forEach(attachClickHandler);
 
 // we should see an enlarged version of image that is
 // inside that .picture-frame.
