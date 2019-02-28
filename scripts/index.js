@@ -5,11 +5,16 @@ console.log("is this thing on? hello?")
 //  which means that it cannot be reassigned.
 const targetElements = document.querySelectorAll("[data-target]") ;
 
-function respondToClick() {
+function respondToClick(event) {
     console.log('hello');
     console.log('how are you?');
-
     console.log('I am fine because I am a hamster.');
+
+    console.log(event.target.parentElement);
+
+    event.target.parentElement.classList.toggle('big');
+
+    // add the "big" class to the thing that got clicked"
 }
 function attachClickHandler(oneElement) {
     oneElement.addEventListener("click", respondToClick);

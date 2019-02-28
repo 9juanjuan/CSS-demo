@@ -47,7 +47,19 @@ html, body {
 .picture-frame img{
     width: 100%;
     height: 100%;
-    opacity: 0.95;
+    opacity: 0.1;
+    /* display: block */
+    transition: all 500ms ease-in;
+    /* 
+        1. property names or the word "all"
+        2. duration in seconds or ms
+        3. timing function 
+    */
+}
+
+.picture-frame.big img{
+    transform:scale(2.5);
+    opacity:1.0;
 }
 
 
@@ -88,7 +100,7 @@ html, body {
 
 @media screen and (min-width: 700px) {
     body {
-        background: purple;
+        background: rgb(242, 122, 140);
     }
     .picture-frame {
         width:30%;
