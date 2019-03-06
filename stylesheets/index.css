@@ -107,7 +107,7 @@ html, body {
     width: 80%;
     /* border: 2px solid cornflowerblue; */
     /* wow much center */
-    display:flex;
+    display:flex; 
     justify-content: center;
     align-content: center;
     margin: 20px 0;

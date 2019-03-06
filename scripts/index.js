@@ -8,32 +8,30 @@ const outputElement= document.querySelector("[data-output]")
 console.log(outputElement)
 
 function respondToClick(event) {
-    // console.log(event.target.getAttribute('src'))
     // assigns src attribute to variable image 
     const image = event.target.getAttribute('src')
     // assign src of image to our data output element
     outputElement.src = image
     //  toggles hidden class onto our output element
-    outputElement.classList.toggle('hidden')
+    outputElement.classList.remove('hidden')
     // toggles big class onto our target 
     event.target.parentElement.classList.toggle('big');
+    // scrolls to top of page
+    window.scrollTo(0,0);
 
 
     // add the "big" class to the thing that got clicked"
 }
 function clickOnBig (event){
-    console.log('boop')
+    // console.log('boop')
     event.target.classList.toggle('hidden');
 }
-
-// function attachBigClickHandler(oneElement){
-//     oneElement.addEventListener("click", clickOnBig);
-// }
+//  adds click event listener and applies respondToClick function
 function attachClickHandler(oneElement) {
     oneElement.addEventListener("click", respondToClick);
-}
 
+}
+//  adds event listener to outputElement that we "click" 
 outputElement.addEventListener("click", clickOnBig);
+// attaches click handler to each target element that we "click"
 targetElements.forEach(attachClickHandler);
-// we should see an enlarged version of image that is
-// inside that .picture-frame.
